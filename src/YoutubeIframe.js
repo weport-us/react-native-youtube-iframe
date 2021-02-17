@@ -19,8 +19,7 @@ import {
 
 const YoutubeIframe = (props, ref) => {
   const {
-    height,
-    width,
+    style,
     videoId,
     playList,
     play = false,
@@ -172,7 +171,7 @@ const YoutubeIframe = (props, ref) => {
   );
 
   return (
-    <View style={{height, width}}>
+    <View style={style}>
       <WebView
         originWhitelist={['*']}
         allowsInlineMediaPlayback
